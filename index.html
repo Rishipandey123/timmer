@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: bisque;
+            text-align: center;
+            justify-content: center;
+            margin: 20px;
+            padding: 150px;
+        }
+        #container{
+            background-color: white;
+            padding: 30px;
+        }
+        .inner{
+            font-size: 150px;
+            font-stretch: extra-expanded;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div id= "container"> 
+        <h1>Timmer Rishi</h1>
+        <p id="msg" class="inner"></p></div>
+
+    <script>
+
+        var t = setInterval(clockTimming,  1000)
+
+        function clockTimming(){
+        var d = new Date();
+        var clock = d.toLocaleTimeString();
+        document.getElementById("msg").innerHTML = clock;
+        }
+    </script>
+</body>
+</html>
